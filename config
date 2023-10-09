@@ -1,0 +1,12 @@
+# ABdeeglr
+Host abdeeglr
+Hostname ssh.github.com
+IdentityFile ~/.ssh/abdeeglr_private
+port 22
+
+# Ramsay
+Host ramsay
+Hostname ssh.github.com
+IdentityFile ~/.ssh/id_rsa
+port 22
+
