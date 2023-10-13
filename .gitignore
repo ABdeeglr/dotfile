@@ -1,0 +1,33 @@
+# compile output
+*.o
+*.a
+*.out
+*.exe
+
+# temp file
+*.swap
+*~
+*.swo
+
+# binarys and exes
+/bin/
+/build/
+
+# other
+/vendor/
+.vscode/
+.idea/
+compile_commands.json
+*.log
+/doc/
+/docgen/
+/docs/
+.DS_Store
+Thumbs.db
+
+# middle files
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+CMakeLists.txt.user
+CMakeSettings.json
