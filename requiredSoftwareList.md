@@ -20,5 +20,6 @@
 18. 坚果云
 19. Sublime
 20. Spotify
-21. 
+21. Pandoc --> Formater
+22. syncthing 
 
