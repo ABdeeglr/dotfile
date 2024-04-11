@@ -1,3 +1,0 @@
-# 实用命令记录
-
-git config --global core.quotepath false --> 让 git 追踪的中文文件名正确显示
