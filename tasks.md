@@ -5,15 +5,15 @@
 - [x] 2 Pacman Mirror
 - [x] 3 utils: gcc/make/cmake/jdk21/rust...
 - [x] 4 paru Aur Sorce
-- [x] 5 Light Weight Apps: paru, warp 
+- [x] 5 Lightweight Apps: paru, warp 
 - [x] 6 Input Method
-- [r] 7 Gaint Weihit Apps: Web Borwser 
+- [x] 7 Gaint Weight Apps: Web Borwser 
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
 - [ ] 
-- [ ] 
+- [ ] 上的上面行不行啊？反正输入法也只是用来玩儿的。我真的服了，这个傻逼输入法，为什么不能用 rime 呢？我真的感觉这样很疯狂，他妈的个傻逼东西
 
 
 ## 1 Language and Fonts
@@ -126,16 +126,16 @@ makepkg -si
 ## 5 Light Weight Apps: warp, obsidian, openssh-server, ...
 
 Update pacman package database: `sudo pacman -Su`
+Update paru package database: `paru -Syu`.
 
 The run: `sudo pacman -S --needed tree tldr zsh`
 
 Use `sudo systemctl start(&& enable) sshd` to start openssh service.
 
-Update paru package database: `paru -Syu`.
 
-Install warp:
-```
-paru -S warp-terminal-new
+Install warp: Download the official *.pkg.tar.zst package. And then install locally by pacman:
+```sh
+sudo pacman -U {package}.pkg.tar.zst
 ```
 
 Install Magic Software, and then install `oh-my-zsh`:
