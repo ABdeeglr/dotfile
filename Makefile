@@ -42,7 +42,7 @@ run:
 	@echo "*                  *"
 	@echo "*    Debug Start   *"
 	@echo "*                  *"
-	@echo -e "********************\n"
+	@echo "********************\n"
 	@$(BUILD_DIR)/final_program $(TARGET_ARGS) 
 
 love:
@@ -50,7 +50,7 @@ love:
 	@echo "*                  *"
 	@echo "*    Debug Start   *"
 	@echo "*                  *"
-	@echo -e "********************\n"
+	@echo "********************\n"
 	@$(BUILD_DIR)/final_program
 
 kkp:

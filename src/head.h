@@ -1,5 +1,5 @@
-#ifndef __HEAD__H__
-#define __HEAD__H__
+#ifndef __FBOOM__
+#define __FBOOM__
 
 #include <stdio.h>
 #include <assert.h>
@@ -24,14 +24,12 @@
 #endif
 
 // malloc 函数的宏写法，仍然需要 free 函数回收
-#define qmalloc(T) (struct T *) malloc(sizeof(struct T))
+#define fMalloc(T) (struct T *) malloc(sizeof(struct T))
 
-typedef char* String;
-typedef int* Pint;
-typedef __int8_t i8;
-typedef __int16_t i16;
-typedef __int32_t i32;
-typedef __int64_t i64;
-typedef __int128_t i128;
+typedef int i32;
+typedef char u8;
+typedef long i64;
+typedef unsigned int u32;
+typedef unsigned long u64;
 
 #endif
