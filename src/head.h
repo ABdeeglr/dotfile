@@ -24,7 +24,9 @@
 #endif
 
 // malloc 函数的宏写法，仍然需要 free 函数回收
-#define fMalloc(T) (struct T *) malloc(sizeof(struct T))
+#define fObMalloc(T) (struct T *) malloc(sizeof(struct T))
+#define fMalloc(T, nums) (T*) calloc(nums, sizeof(T))
+#define NewFunctionType(FT_NAME, RETURN_TYPE, ...) typedef RETURN_TYPE (*FT_NAME)(__VA_ARGS__)
 
 typedef int i32;
 typedef char u8;
