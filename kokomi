@@ -18,16 +18,15 @@ cd src
 cp ${SRC_DIR}/src/head.h .
 cp ${SRC_DIR}/src/main.c .
 
+cd ..
 git init .
 git branch -M main
 git add .
 git commit -m "First commit"
 
-echo -e "\n"
 echo "\\--------------------------\\"
 echo " \\---                    ---\\"
 echo "  \\--     Everything Done  --\\"
 echo "   \\---                    ---\\"
 echo "    \\--------------------------\\"
-echo -e "\n"
 
