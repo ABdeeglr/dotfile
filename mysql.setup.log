@@ -1,0 +1,63 @@
+# Mysql 操作日志
+
+## 1 初始化和管理员设置
+
+```bash
+sudo apt-get install mysql
+sudo systemctl start mysql
+sudo systemctl enable mysql
+```
+
+执行上述内容进行初始化。
+
+```bash
+sudo mysql -u root
+```
+
+通过 sudo 命令作为管理员登录服务器。
+
+```mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_passpword BY 'new_passowrd';
+FLUSH PRIVILEGES;
+```
+
+为管理员账户设定密码。
+
+```mysql
+CREATE DATABASE sample
+```
+
+建立数据库
+
+```mysql
+CREATE USER 'sample_mgr'@'localhost' IDENTIFIED BY 'passwd';
+GRANT ALL PRIVILEGES ON sample.* TO 'sample_mgr'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+建立特定数据库的管理员账户。
+
+```mysql
+CREATE USER 'visitor'@'%' IDENTIFIED BY 'passwd';
+GRANT SELECT, INSERT ON sample.* TO 'visitor'@'%';
+FLUSH PRIVILEGES;
+```
+
+建立访问用户
+
+```mysql
+SHOW GRANTS FOR 'mgr'@'localhost';
+SHOW GRANTS FOR 'visitor'@'%';
+```
+
+检查用户权限
+
+```mysql
+SELECT User, Host FROM mysql.user;
+```
+
+上述内容可以对已注册用户进行检索。
+
+
+
+
